@@ -49,7 +49,7 @@ bool NinjaMove::init()
     _player->setPosition(Vec2(x,y));
     addChild(_player, 2, 200);
     
-    setViewpointCenter(_player->getPosition());//地图滚动
+    //setViewpointCenter(_player->getPosition());//地图滚动？？？？？？？？？？？？？？？？？
     
     _collidable = _tileMap->getLayer("collidable");//获取碰撞检测层
     _collidable->setVisible(false);//设置为不可见
@@ -117,13 +117,14 @@ void NinjaMove::setPlayerPosition(Vec2 position)
     //移动精灵
     _player->setPosition(position);
 }
-
+//将坐标转化为瓦片坐标
 Vec2 NinjaMove::tileCoordFromPosition(Vec2 pos)
 {
     int x = pos.x / _tileMap->getTileSize().width;
     int y = ((_tileMap->getMapSize().height * _tileMap->getTileSize().height) - pos.y) / _tileMap->getTileSize().height;
     return Vec2(x,y);
 }
+//地图滚动
 void NinjaMove::setViewpointCenter(Vec2 position)
 {
     log("setViewpointCenter");

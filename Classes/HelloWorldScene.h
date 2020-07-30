@@ -14,6 +14,7 @@ public:
     //回调函数声明
     void menuCloseCallback(cocos2d::Ref* pSender);
     void menuItemStartCallback(Ref* pSender);
+    void menuItemStart2Callback(Ref* pSender);
     void menuItemSettingCallback(Ref* pSender);
     void menuItemHelpCallback(Ref* pSender);
     CREATE_FUNC(HelloWorld);

@@ -1,9 +1,11 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "SettingScene.h"
-//#include "TouchDemoScene.h"//触摸demo
-//#include "MapInit.h"
+#include "PhysicScene.h"
+#include "TouchDemoScene.h"//触摸demo
+#include "MapInit.h"
 #include "NinjaMove.h"
+#include "CrashDetection.h"
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -66,6 +68,14 @@ bool HelloWorld::init()
     startMenuItem->setPosition(Director::getInstance()->convertToGL(Vec2(480, 170)));
     startMenuItem->setScale(0.5);
     
+    //开始2按钮精灵
+    Sprite *start2_1 = Sprite::create("Ball.png");
+    Sprite *start2_2 = Sprite::create("Ball.png");
+    MenuItemSprite *start2MenuItem = MenuItemSprite::create(start2_1,
+                                                           start2_2,
+                                                        CC_CALLBACK_1(HelloWorld::menuItemStart2Callback, this));
+    start2MenuItem->setPosition(Director::getInstance()->convertToGL(Vec2(280, 170)));
+    start2MenuItem->setScale(0.5);
     //设置按钮
     MenuItemImage *settingMenuItem = MenuItemImage::create(
                                                            "setting-up.png",
@@ -83,7 +93,7 @@ bool HelloWorld::init()
     helpMenuItem->setPosition(Director::getInstance()->convertToGL(Vec2(480,430)));
     helpMenuItem->setScale(0.65);
     
-    auto mu = Menu::create(startMenuItem,settingMenuItem,helpMenuItem,NULL);
+    auto mu = Menu::create(startMenuItem,start2MenuItem,settingMenuItem,helpMenuItem,NULL);
     mu->setPosition(Vec2::ZERO);
     this->addChild(mu);
     return true;
@@ -97,6 +107,11 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 void HelloWorld::menuItemStartCallback(Ref* pSender)
 {
     Director::getInstance()->replaceScene(NinjaMove::createScene());//场景跳转
+}
+//开始2按钮回调函数
+void HelloWorld::menuItemStart2Callback(Ref* pSender)
+{
+    Director::getInstance()->replaceScene(PhysicScene::createScene());//场景跳转
 }
 //设置按钮回调函数
 void HelloWorld::menuItemSettingCallback(Ref* pSender)
