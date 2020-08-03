@@ -84,7 +84,7 @@ void TouchDemo::onTouchEndedCallback(Touch* touch, Event* event){
     }
 
 }
-//析构函数销毁监听器
+//销毁监听器
 void TouchDemo::onExit(){
     Layer::onExit();
     log("onexit");

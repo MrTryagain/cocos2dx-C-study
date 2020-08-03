@@ -86,7 +86,7 @@ bool CrashDetection::init()
     ballBody2->setGravityEnable(false);//设置重力
     Vect force2 = Vect(-500000.0f,-500000.0f);
     ballBody2->applyImpulse(force2);//产生推力
-    ballBody2->setContactTestBitmask(0xFFFFFFFF);
+    ballBody2->setContactTestBitmask(0xFFFFFFFF);//所有掩码都设为1，可以产生碰撞监听
     ball2->setPhysicsBody(ballBody2);//球1body添加进精灵
     ball2->setTag(1);
     this->addChild(ball2);

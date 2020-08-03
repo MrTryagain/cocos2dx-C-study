@@ -6,6 +6,7 @@
 #include "MapInit.h"
 #include "NinjaMove.h"
 #include "CrashDetection.h"
+#include "StructureDemo.h"
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -106,12 +107,12 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 //开始按钮回调函数
 void HelloWorld::menuItemStartCallback(Ref* pSender)
 {
-    Director::getInstance()->replaceScene(NinjaMove::createScene());//场景跳转
+    Director::getInstance()->replaceScene(Structure::createScene());//场景跳转
 }
 //开始2按钮回调函数
 void HelloWorld::menuItemStart2Callback(Ref* pSender)
 {
-    Director::getInstance()->replaceScene(PhysicScene::createScene());//场景跳转
+    Director::getInstance()->replaceScene(CrashDetection::createScene());//场景跳转
 }
 //设置按钮回调函数
 void HelloWorld::menuItemSettingCallback(Ref* pSender)

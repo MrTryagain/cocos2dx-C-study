@@ -40,9 +40,9 @@ class PhysicsBody;
 
 typedef struct CC_DLL PhysicsMaterial
 {
-    float density;          ///< The density of the object.
-    float restitution;      ///< The bounciness of the physics body.
-    float friction;         ///< The roughness of the surface of a shape.
+    float density;          ///< The density of the object.密度
+    float restitution;      ///< The bounciness of the physics body.弹性形变
+    float friction;         ///< The roughness of the surface of a shape.摩擦力
     
     PhysicsMaterial()
     : density(0.0f)

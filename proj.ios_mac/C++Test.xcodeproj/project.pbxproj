@@ -103,6 +103,18 @@
 		5D3FDF3F24D16765004D260F /* NinjaMove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3FDF3C24D16765004D260F /* NinjaMove.cpp */; };
 		5D3FDF4124D175FF004D260F /* empty.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D3FDF4024D175FF004D260F /* empty.wav */; };
 		5D3FDF4224D175FF004D260F /* empty.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D3FDF4024D175FF004D260F /* empty.wav */; };
+		5DC3493D24D4161F0024EADA /* StructureDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3493B24D4161F0024EADA /* StructureDemo.cpp */; };
+		5DC3493E24D4161F0024EADA /* StructureDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3493B24D4161F0024EADA /* StructureDemo.cpp */; };
+		5DC3494224D41FC00024EADA /* go-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3494024D41FC00024EADA /* go-up.png */; };
+		5DC3494324D41FC00024EADA /* go-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3494024D41FC00024EADA /* go-up.png */; };
+		5DC3494424D41FC00024EADA /* go-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3494124D41FC00024EADA /* go-down.png */; };
+		5DC3494524D41FC00024EADA /* go-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3494124D41FC00024EADA /* go-down.png */; };
+		5DF4405424D27FB300917C3D /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4405224D27FB300917C3D /* Arrow.png */; };
+		5DF4405524D27FB300917C3D /* AttachmentPoint_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4405324D27FB300917C3D /* AttachmentPoint_Mask.png */; };
+		5DF4405824D27FDE00917C3D /* PhysicScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4405624D27FDE00917C3D /* PhysicScene.cpp */; };
+		5DF4405924D27FDE00917C3D /* PhysicScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4405624D27FDE00917C3D /* PhysicScene.cpp */; };
+		5DF4405C24D2B4D100917C3D /* CrashDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4405A24D2B4D100917C3D /* CrashDetection.cpp */; };
+		5DF4405D24D2B4D100917C3D /* CrashDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4405A24D2B4D100917C3D /* CrashDetection.cpp */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -223,6 +235,16 @@
 		5D3FDF3C24D16765004D260F /* NinjaMove.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NinjaMove.cpp; sourceTree = "<group>"; };
 		5D3FDF3D24D16765004D260F /* NinjaMove.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NinjaMove.h; sourceTree = "<group>"; };
 		5D3FDF4024D175FF004D260F /* empty.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = empty.wav; sourceTree = "<group>"; };
+		5DC3493B24D4161F0024EADA /* StructureDemo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StructureDemo.cpp; sourceTree = "<group>"; };
+		5DC3493C24D4161F0024EADA /* StructureDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StructureDemo.h; sourceTree = "<group>"; };
+		5DC3494024D41FC00024EADA /* go-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go-up.png"; sourceTree = "<group>"; };
+		5DC3494124D41FC00024EADA /* go-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go-down.png"; sourceTree = "<group>"; };
+		5DF4405224D27FB300917C3D /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
+		5DF4405324D27FB300917C3D /* AttachmentPoint_Mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttachmentPoint_Mask.png; sourceTree = "<group>"; };
+		5DF4405624D27FDE00917C3D /* PhysicScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicScene.cpp; sourceTree = "<group>"; };
+		5DF4405724D27FDE00917C3D /* PhysicScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicScene.h; sourceTree = "<group>"; };
+		5DF4405A24D2B4D100917C3D /* CrashDetection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrashDetection.cpp; sourceTree = "<group>"; };
+		5DF4405B24D2B4D100917C3D /* CrashDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashDetection.h; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -371,12 +393,16 @@
 				5D13FA8924D002390006453D /* BoxB2.png */,
 				5D13FA8824D002390006453D /* BoxC2.png */,
 				5D13FA8624D002390006453D /* chest_close.png */,
+				5DF4405224D27FB300917C3D /* Arrow.png */,
+				5DF4405324D27FB300917C3D /* AttachmentPoint_Mask.png */,
 				5D13FA8A24D002390006453D /* CloseNormal.png */,
 				5D13FA8724D002390006453D /* CloseSelected.png */,
 				5D13FA8024D002380006453D /* HelloWorld.png */,
 				5D3FDF3324D16492004D260F /* ninja.png */,
 				5D13FA7F24D002370006453D /* help-down.png */,
 				5D13FA8124D002380006453D /* help-up.png */,
+				5DC3494124D41FC00024EADA /* go-down.png */,
+				5DC3494024D41FC00024EADA /* go-up.png */,
 				5D13FA8C24D002390006453D /* off.png */,
 				5D13FA8B24D002390006453D /* ok-down.png */,
 				5D13FA8D24D002390006453D /* ok-up.png */,
@@ -409,6 +435,12 @@
 				5D3FDF3024D1641D004D260F /* MapInit.h */,
 				5D3FDF3C24D16765004D260F /* NinjaMove.cpp */,
 				5D3FDF3D24D16765004D260F /* NinjaMove.h */,
+				5DF4405624D27FDE00917C3D /* PhysicScene.cpp */,
+				5DF4405724D27FDE00917C3D /* PhysicScene.h */,
+				5DF4405A24D2B4D100917C3D /* CrashDetection.cpp */,
+				5DF4405B24D2B4D100917C3D /* CrashDetection.h */,
+				5DC3493B24D4161F0024EADA /* StructureDemo.cpp */,
+				5DC3493C24D4161F0024EADA /* StructureDemo.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -538,15 +570,18 @@
 			files = (
 				5D13FAB524D0023A0006453D /* Ball.png in Resources */,
 				5D13FAA324D0023A0006453D /* chest_close.png in Resources */,
+				5DF4405524D27FB300917C3D /* AttachmentPoint_Mask.png in Resources */,
 				5D13FABB24D0023A0006453D /* on.png in Resources */,
 				5D13FAB924D0023A0006453D /* setting-down.png in Resources */,
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
 				5D3FDF3824D1649D004D260F /* map in Resources */,
+				5DC3494424D41FC00024EADA /* go-down.png in Resources */,
 				5D13FAB324D0023A0006453D /* setting-back.png in Resources */,
 				5D3FDF3424D16492004D260F /* ninja.png in Resources */,
 				5D13FAA724D0023A0006453D /* BoxC2.png in Resources */,
 				1A88B2641FC3D9C9005C14AE /* Images.xcassets in Resources */,
 				5D13FA9B24D0023A0006453D /* background.png in Resources */,
+				5DC3494224D41FC00024EADA /* go-up.png in Resources */,
 				5D13FAA924D0023A0006453D /* BoxB2.png in Resources */,
 				5D13FA9F24D0023A0006453D /* start-up.png in Resources */,
 				5D13FAA524D0023A0006453D /* CloseSelected.png in Resources */,
@@ -565,6 +600,7 @@
 				1AF87B891F6F781D007BE51C /* LaunchScreenBackground.png in Resources */,
 				5D13FA9924D0023A0006453D /* help-up.png in Resources */,
 				5D13FAB724D0023A0006453D /* BackgroundTile.png in Resources */,
+				5DF4405424D27FB300917C3D /* Arrow.png in Resources */,
 				5D3FDF3A24D1649D004D260F /* David Gervais Tilesets in Resources */,
 				5D13FAAD24D0023A0006453D /* ok-down.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
@@ -580,6 +616,7 @@
 				5D13FA9424D0023A0006453D /* setting-up.png in Resources */,
 				46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */,
 				5D13FAA224D0023A0006453D /* BoxA2.png in Resources */,
+				5DC3494324D41FC00024EADA /* go-up.png in Resources */,
 				5D13FAA624D0023A0006453D /* CloseSelected.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				5D3FDF3B24D1649D004D260F /* David Gervais Tilesets in Resources */,
@@ -605,6 +642,7 @@
 				5D13FAB224D0023A0006453D /* ok-up.png in Resources */,
 				5D13FA9C24D0023A0006453D /* background.png in Resources */,
 				46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */,
+				5DC3494524D41FC00024EADA /* go-down.png in Resources */,
 				5D13FAB824D0023A0006453D /* BackgroundTile.png in Resources */,
 				5D13FAAC24D0023A0006453D /* CloseNormal.png in Resources */,
 			);
@@ -621,8 +659,11 @@
 				1AF87B8B1F6F782A007BE51C /* RootViewController.mm in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				5D13FABF24D002630006453D /* SettingScene.cpp in Sources */,
+				5DC3493D24D4161F0024EADA /* StructureDemo.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
+				5DF4405C24D2B4D100917C3D /* CrashDetection.cpp in Sources */,
 				5D13FAC324D002C50006453D /* TouchDemoScene.cpp in Sources */,
+				5DF4405824D27FDE00917C3D /* PhysicScene.cpp in Sources */,
 				5D3FDF3124D1641D004D260F /* MapInit.cpp in Sources */,
 				5D3FDF3E24D16765004D260F /* NinjaMove.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
@@ -636,9 +677,12 @@
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				5D13FAC024D002630006453D /* SettingScene.cpp in Sources */,
 				5D3FDF3F24D16765004D260F /* NinjaMove.cpp in Sources */,
+				5DF4405D24D2B4D100917C3D /* CrashDetection.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				5D13FAC424D002C50006453D /* TouchDemoScene.cpp in Sources */,
 				5D3FDF3224D1641D004D260F /* MapInit.cpp in Sources */,
+				5DF4405924D27FDE00917C3D /* PhysicScene.cpp in Sources */,
+				5DC3493E24D4161F0024EADA /* StructureDemo.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

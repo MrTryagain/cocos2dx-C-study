@@ -43,30 +43,36 @@ bool PhysicScene::init()
     eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
     return true;
 }
+
 bool PhysicScene::onTouchBeganCallback(Touch* touch,Event* event){
+    log("点击");
     Vec2 location = touch->getLocation();
     addNewSpriteAtPosition(location);
-    addNewParticlePosition(location);
+//    addNewParticlePosition(location);
     return false;
 }
 
 //添加精灵
-void PhysicScene::addNewSpriteAtPosition(Vec2 p)
+void PhysicScene::addNewSpriteAtPosition(Vec2 touchLocation)
 {
     auto sp = Sprite::create("Ball.png");
     sp->setTag(1);
     //创建圈圈形状物体
     auto body = PhysicsBody::createCircle(sp->getContentSize().width/2);
     sp->setPhysicsBody(body);//设置与精灵关联
-    sp->setPosition(p);
+    sp->setPosition(touchLocation);
+    log("%f,%f",touchLocation.x,touchLocation.y);
     this->addChild(sp);
- 
+    ParticleSystem* ps = ParticleFire::create();
+    ps->setPosition(touchLocation);
+    sp->addChild(ps);
 }
 //添加粒子特效
-void PhysicScene::addNewParticlePosition(Vec2 p){
-    ParticleSystem* ps = ParticleMeteor::create();
-    ps->setPosition(p);
-    this->addChild(ps);
+void PhysicScene::addNewParticlePosition(Vec2 location,Sprite* sprite){
+//    ParticleSystem* ps = ParticleMeteor::create();
+//    ps->setPosition(location);
+//    log("%f,%f",location.x,location.y);
+//    sprite->addChild(ps);//精灵添加粒子子节点
 }
 void PhysicScene::update(float dt){
     
