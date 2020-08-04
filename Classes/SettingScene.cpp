@@ -23,7 +23,7 @@ bool Setting::init(){
         return false;
     }
     //设置背景
-    auto bg = Sprite::create("setting-back.png");
+    auto bg = Sprite::create("settingbg.jpg");
     bg->setPosition(480,320);
     addChild(bg);
 
