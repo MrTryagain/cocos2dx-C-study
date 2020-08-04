@@ -7,6 +7,7 @@
 #include "NinjaMove.h"
 #include "CrashDetection.h"
 #include "StructureDemo.h"
+#include "ShopScene.h"
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -57,7 +58,7 @@ bool HelloWorld::init()
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
     //设置背景
-    auto bg = Sprite::create("background.png");
+    auto bg = Sprite::create("fallbg.jpg");
     bg->setPosition(480,320);
     this->addChild(bg);
     //开始按钮精灵
@@ -107,12 +108,13 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 //开始按钮回调函数
 void HelloWorld::menuItemStartCallback(Ref* pSender)
 {
-    Director::getInstance()->replaceScene(Structure::createScene());//场景跳转
+    log("开始游戏");
+    Director::getInstance()->pushScene(ShopScene::createScene());//场景跳转
 }
 //开始2按钮回调函数
 void HelloWorld::menuItemStart2Callback(Ref* pSender)
 {
-    Director::getInstance()->replaceScene(CrashDetection::createScene());//场景跳转
+    Director::getInstance()->replaceScene(PhysicScene::createScene());//场景跳转
 }
 //设置按钮回调函数
 void HelloWorld::menuItemSettingCallback(Ref* pSender)
@@ -122,6 +124,6 @@ void HelloWorld::menuItemSettingCallback(Ref* pSender)
 //帮助按钮回调函数
 void HelloWorld::menuItemHelpCallback(Ref* pSender)
 {
-    
+    Director::getInstance()->pushScene(ShopScene::createScene());
 }
 
