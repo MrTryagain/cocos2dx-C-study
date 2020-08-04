@@ -27,7 +27,7 @@ bool Structure::init(){
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu,1);
     //创建__Array* 类型的list成员变量
-    this->list = __Array::createWithCapacity(MAX_COUNT);
+    this->list = __Array::createWithCapacity(MAX_COUNT);//设置数组容量
     this->list->retain();//保留list的内存，因为list是autorelease的，init结束会释放。
     for(int i=0;i<MAX_COUNT;++i){
         Sprite* sprite = Sprite::create("Ball.png");//循环创建精灵对象
