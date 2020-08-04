@@ -10,7 +10,6 @@ public:
     bool onTouchBeganCallback(cocos2d::Touch* touch,cocos2d::Event* event);
     void onTouchMovedCallback(cocos2d::Touch* touch,cocos2d::Event* event);
     void onTouchEndedCallback(cocos2d::Touch* touch,cocos2d::Event* event);
-
     CREATE_FUNC(TouchDemo);
 };
 
