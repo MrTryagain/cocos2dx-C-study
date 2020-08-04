@@ -40,18 +40,18 @@ void Structure::menuCloseCallback(Ref* pSender){
     log("list->count() = %zd",this->list->count());
     Size visibleSize = Director::getInstance()->getVisibleSize();
     CCARRAY_FOREACH(this->list, obj){//宏命令遍历list
-        Sprite* sprite = (Sprite*)obj;
+        Sprite* sprite = (Sprite*)obj;//将ref转换成Sprite对象
         int x = CCRANDOM_0_1()*visibleSize.width;
         int y = CCRANDOM_0_1()*visibleSize.height;
         
-        sprite->setPosition(Vec2(x,y));
-        this->removeChild(sprite);
-        this->addChild(sprite);
+        sprite->setPosition(Vec2(x,y));//设置精灵坐标
+        this->removeChild(sprite);//移除
+        this->addChild(sprite);//新建
     }
 }
 Structure::~Structure(){
     //1.移除list所以对象
     this->list->removeAllObjects();
-    //2.安全释放list对象
+    //
     CC_SAFE_RELEASE_NULL(this->list);
 }
